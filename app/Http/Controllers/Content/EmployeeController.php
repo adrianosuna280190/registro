@@ -35,7 +35,7 @@ class EmployeeController extends Controller
             'title' => 'required|max:255',
             'work_department' => 'required|max:255',
             'gender' => 'required|in:male,female',
-            'date_of_birth' => 'required|date|before:today',
+            'date_of_birth' => 'required|date',
             'salary' => 'required|numeric',
             'email' => 'required|email|max:255',
             'telephone' => 'required|min:11|numeric',
@@ -107,7 +107,7 @@ class EmployeeController extends Controller
       ', [$first_name, $last_name, $title, $work_department, $gender, $date_of_birth, $salary, $email, $telephone, $id]);
 
         // Redirect
-        return redirect()->route('employee')->with('status', 'Employee has been updated');
+        return redirect()->route('employee')->with('status', 'El registro a sido actualizado');
     }
 
 }

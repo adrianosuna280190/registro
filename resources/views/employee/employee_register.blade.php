@@ -21,7 +21,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('first_name') }}" id="first_name" name="first_name" type="text"
-                                    placeholder="Employee's first name">
+                                    placeholder="primer nombre">
                                 @error('first_name')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
