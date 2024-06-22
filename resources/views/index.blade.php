@@ -10,25 +10,25 @@
                             @auth
                                 @if (auth()->user())
                                     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                                        <span class="block xl:inline">Welcome</span>
+                                        <span class="block xl:inline">Bienvenido</span>
                                         <span
                                             class="block text-green-600 xl:inline">{{ auth()->user()->first_name . ' ' . auth()->user()->last_name }}</span>
                                     </h1>
                                     <p
                                         class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                        We are a leading sales and distribution company in Cambodia, holding the exclusive
-                                        distributorships of many international brands from business partners
+                                        Sistema de Registro para Personal de Honorarios
+                                        
                                 @endif
                             @endauth
                             @guest
                                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                                    <span class="block xl:inline">GoodHill</span>
-                                    <span class="block text-green-600 xl:inline">Employee Registration</span>
+                                    <span class="block xl:inline">Bienvenido</span>
+                                    <span class="block text-red-600 xl:inline">Sistema de Registro</span>
                                 </h1>
                                 <p
                                     class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                                    We are a leading sales and distribution company in Cambodia, holding the exclusive
-                                    distributorships of many international brands from business partners
+                                    Sistema de Registro para Personal de Honorarios
+                                    
                                 </p>
                             @endguest
                         </div>
@@ -37,13 +37,13 @@
                                 <div class="rounded-md shadow">
                                     <a href="{{ route('login') }}"
                                         class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10">
-                                        Log In
+                                        Ingresar
                                     </a>
                                 </div>
                                 <div class="mt-3 sm:mt-0 sm:ml-3">
                                     <a href="{{ route('register') }}"
                                         class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-4 md:text-lg md:px-10">
-                                        Register
+                                        Registrar
                                     </a>
                                 </div>
                             </div>

@@ -9,7 +9,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <script defer src="{{ asset('js/nav.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <title>GoodHill HR</title>
+    <title>Sistema de Registro</title>
 </head>
 
 <body>
@@ -36,12 +36,12 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <a class="text-4xl font-bold text-white lg:text-3xl" href="{{ route('/') }}">GoodHill</a>
+                    <a class="text-4xl font-bold text-white lg:text-3xl" href="{{ route('/') }}">Bienvenido</a>
                 </div>
                 <div class="hidden sm:block sm:ml-6">
                     <div class="flex space-x-4">
                         <a href="{{ route('/') }}"
-                            class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                            class="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
                         @auth
                             @if (auth()->user())
                                 <a href="{{ route('employee') }}"
@@ -115,12 +115,12 @@
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a
                 class="flex title-font items-center md:justify-start justify-center text-white text-4xl font-bold lg:text-3xl">
-                GoodHill
+                Sistema de Registro
             </a>
 
             <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
-                2021 -
-                <a href="{{ route('/') }}" class="text-gray-500 ml-1" rel="noopener noreferrer">Lay Mingthean</a>
+                2024 -
+                <a href="{{ route('/') }}" class="text-gray-500 ml-1" rel="noopener noreferrer">Adrian osuna</a>
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                 <a target="_blank" class="ml-3 text-gray-400" href="https://github.com/mingtheanlay">
