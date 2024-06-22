@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="container mx-auto px-6 pt-6">
-        <h1 class="text-2xl bold">Employee List</h1>
+        <h1 class="text-2xl bold">Lista de Registro</h1>
         @if (session('status'))
             <div class="bg-green-500 p-2 rounded-lg mb-6 text-white text-center m-5 ">
                 {{ session('status') }}
