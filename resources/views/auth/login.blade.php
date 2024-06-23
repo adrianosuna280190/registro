@@ -5,10 +5,10 @@
         <div class="max-w-md w-full space-y-8">
             <div>
                 <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-                    GoodHill
+                    USUARIO
                 </h2>
                 <p class="mt-2 text-center text-sm text-gray-600">
-                    Log in to your account
+                    Ingrese a su cuenta
                 </p>
             </div>
             <form class="mt-8 space-y-5" action="{{ route('login') }}" method="POST">
@@ -53,7 +53,7 @@
                         <input id="remember" name="remember" type="checkbox" checked
                             class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded">
                         <label for="remember" class="ml-2 block text-sm text-gray-900">
-                            Remember me
+                            Recordarme
                         </label>
                     </div>
 
@@ -62,7 +62,7 @@
                 <div>
                     <button type="submit"
                         class="group relative w-full flex justify-center py-2 px-4 border border-transparent rounded-md bg-black hover:bg-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                        Log in
+                        Ingresar
                     </button>
                 </div>
             </form>

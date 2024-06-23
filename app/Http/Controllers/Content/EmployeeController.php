@@ -55,7 +55,7 @@ class EmployeeController extends Controller
         ]);
 
         // Redirect
-        return redirect()->route('employee')->with('status', 'Employee has been added');
+        return redirect()->route('employee')->with('status', 'El empleado se registro correctamente');
     }
 
     public function show($id)
@@ -69,7 +69,7 @@ class EmployeeController extends Controller
         DB::delete('delete from employees where id = ?', [$id]);
 
         // Redirect
-        return redirect()->route('employee')->with('status', 'Employee has been deleted');
+        return redirect()->route('employee')->with('status', 'Registro eliminado');
     }
 
     public function edit($id)
@@ -107,7 +107,7 @@ class EmployeeController extends Controller
       ', [$first_name, $last_name, $title, $work_department, $gender, $date_of_birth, $salary, $email, $telephone, $id]);
 
         // Redirect
-        return redirect()->route('employee')->with('status', 'El registro a sido actualizado');
+        return redirect()->route('employee')->with('status', 'El registro se actualizo');
     }
 
 }

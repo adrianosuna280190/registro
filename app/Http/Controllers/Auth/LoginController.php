@@ -31,7 +31,7 @@ class LoginController extends Controller
             // Redirect
             return redirect()->route('/');
         } else {
-            return back()->with('status', 'Incorrect username or password');
+            return back()->with('status', 'Usuario o contraseña incorrecto');
         }
     }
 }

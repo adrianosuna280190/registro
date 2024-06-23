@@ -12,7 +12,7 @@
                                     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                                         <span class="block xl:inline">Bienvenido</span>
                                         <span
-                                            class="block text-green-600 xl:inline">{{ auth()->user()->first_name . ' ' . auth()->user()->last_name }}</span>
+                                            class="block text-gray-600 xl:inline">{{ auth()->user()->first_name . ' ' . auth()->user()->last_name }}</span>
                                     </h1>
                                     <p
                                         class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
@@ -23,7 +23,7 @@
                             @guest
                                 <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                                     <span class="block xl:inline">Bienvenido</span>
-                                    <span class="block text-red-600 xl:inline">Sistema de Registro</span>
+                                    <span class="block text-gray-600 xl:inline">Sistema de Registro</span>
                                 </h1>
                                 <p
                                     class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

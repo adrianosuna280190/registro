@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mx-auto px-6 pt-6">
-        <h1 class="text-2xl bold">Edit Employee</h1>
+        <h1 class="text-2xl bold">Editar empleado</h1>
     </div>
     <div class="container mx-auto px-6">
         <div class="w-full">
@@ -12,8 +12,8 @@
                         @csrf
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="first_name">First
-                                    Name</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="first_name">Nombre
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('first_name')
@@ -29,8 +29,8 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="last_name">Last
-                                    Name</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="last_name">Apellidos
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('last_name')
@@ -48,7 +48,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="title">Job title</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="title">Puesto</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('title')
@@ -64,8 +64,8 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="work_department">Work
-                                    Departments</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="work_department">Adscripcion
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('work_department')
@@ -83,7 +83,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="gender">Gender</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="gender">Genero</label>
                                 <select
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('gender')
@@ -109,7 +109,7 @@
                             </div>
                             <div class="w-1/2 ml-1">
                                 <label class="block text-grey-500 text-sm font-bold mb-2"
-                                    for="work_department">Salary</label>
+                                    for="work_department">Sueldo mensual</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('salary')
@@ -127,8 +127,8 @@
                         </div>
 
                         <div class="mb-4">
-                            <label class="block text-grey-500 text-sm font-bold mb-2" for="date_of_birth">Date of
-                                Birth</label>
+                            <label class="block text-grey-500 text-sm font-bold mb-2" for="date_of_birth">Fecha ingreso
+                                </label>
                             <input
                                 class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                 @error('date_of_birth')
@@ -144,7 +144,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="email">Email</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="email">Correo</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('email')
@@ -160,7 +160,7 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="telephone">Telephone</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="telephone">Telefono</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('telephone')
@@ -178,7 +178,7 @@
                         <div class="flex items-center justify-between mt-8">
                             <button class="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full"
                                 type="submit">
-                                Update Employee
+                                Actualizar registro
                             </button>
                         </div>
                     </form>

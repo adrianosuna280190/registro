@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mx-auto px-6 pt-6">
-        <h1 class="text-2xl bold">Add New Employee</h1>
+        <h1 class="text-2xl bold">Agregar empleado</h1>
     </div>
     <div class="container mx-auto px-6">
         <div class="w-full">
@@ -12,8 +12,8 @@
                         @csrf
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="first_name">First
-                                    Name</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="first_name">Nombre
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                     @error('first_name')
@@ -21,7 +21,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('first_name') }}" id="first_name" name="first_name" type="text"
-                                    placeholder="primer nombre">
+                                    placeholder="">
                                 @error('first_name')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -29,8 +29,8 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="last_name">Last
-                                    Name</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="last_name">Apellidos
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('last_name')
@@ -38,7 +38,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('last_name') }}" id="last_name" name="last_name" type="text"
-                                    placeholder="Employee's last name">
+                                    placeholder="">
                                 @error('last_name')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -48,7 +48,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="title">Job title</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="title">Puesto</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                     @error('title')
@@ -56,7 +56,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('title') }}" id="title" name="title" type="text"
-                                    placeholder="Employee's first name">
+                                    placeholder="">
                                 @error('title')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -64,8 +64,8 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="work_department">Work
-                                    Departments</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="work_department">Adscripcion
+                                    </label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('work_department')
@@ -73,7 +73,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('work_department') }}" id="work_department" name="work_department"
-                                    type="text" placeholder="Employee's work department">
+                                    type="text" placeholder="">
                                 @error('work_department')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -83,7 +83,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="gender">Gender</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="gender">Genero</label>
                                 <select
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                     @error('gender')
@@ -91,7 +91,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('gender') }}" id="gender" name="gender" >
-                                    <option value="" disabled selected>Employee's gender</option>
+                                    <option value="" disabled selected>Femenino o Masculino</option>
                                     <option value="female">F</option>
                                     <option value="male">M</option>
                                 </select>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="w-1/2 ml-1">
                                 <label class="block text-grey-500 text-sm font-bold mb-2"
-                                    for="work_department">Salary</label>
+                                    for="work_department">Sueldo mensual</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500
                                     @error('salary')
@@ -111,7 +111,7 @@
                                     @enderror 
                                     "
                                     value="{{ old('salary') }}" id="salary" name="salary" type="text"
-                                    placeholder="Employee's salary">
+                                    placeholder="">
                                 @error('salary')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -121,15 +121,15 @@
                         </div>
 
                         <div class="mb-4">
-                            <label class="block text-grey-500 text-sm font-bold mb-2" for="date_of_birth">Date of
-                                Birth</label>
+                            <label class="block text-grey-500 text-sm font-bold mb-2" for="date_of_birth">Fecha ingreso
+                                </label>
                             <input
                                 class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                 @error('date_of_birth')
                                     border-red-500
                                 @enderror "
                                 value="{{ old('date_of_birth') }}" id="date_of_birth" name="date_of_birth" type="date"
-                                placeholder="Employee's date of birth">
+                                placeholder="">
                             @error('date_of_birth')
                                 <div class="text-red-500 mt-2 text-sm">
                                     {{ $message }}
@@ -138,7 +138,7 @@
                         </div>
                         <div class="flex mb-4">
                             <div class="w-1/2 mr-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="email">Email</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="email">Correo</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                     @error('email')
@@ -146,7 +146,7 @@
                                     @enderror
                                     "
                                     value="{{ old('email') }}" id="email" type="email" name="email"
-                                    placeholder="Employee's email">
+                                    placeholder="">
                                 @error('email')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -154,14 +154,14 @@
                                 @enderror
                             </div>
                             <div class="w-1/2 ml-1">
-                                <label class="block text-grey-500 text-sm font-bold mb-2" for="telephone">Telephone</label>
+                                <label class="block text-grey-500 text-sm font-bold mb-2" for="telephone">Telefono</label>
                                 <input
                                     class="appearance-none border rounded w-full py-2 px-3 text-grey-500 
                                     @error('telephone')
                                         border-red-500
                                     @enderror"
                                     value="{{ old('telephone') }}" id="telephone" name="telephone" type="text"
-                                    placeholder="Employee's telephone">
+                                    placeholder="">
                                 @error('telephone')
                                     <div class="text-red-500 mt-2 text-sm">
                                         {{ $message }}
@@ -172,7 +172,7 @@
                         <div class="flex items-center justify-between mt-8">
                             <button class="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-full"
                                 type="submit">
-                                Register Employee
+                                Registrar empleado
                             </button>
                         </div>
                     </form>

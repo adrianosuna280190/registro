@@ -17,12 +17,12 @@
                         <tr
                             class="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
                             <th class="px-4 py-3">#</th>
-                            <th class="px-4 py-3">Employee Name</th>
-                            <th class="px-4 py-3">Work Department</th>
-                            <th class="px-4 py-3">Salary</th>
-                            <th class="px-4 py-3">Telephone</th>
-                            <th class="px-4 py-3">Email</th>
-                            <th class="px-4 py-3 text-center">Action</th>
+                            <th class="px-4 py-3">Nombre y Puesto</th>
+                            <th class="px-4 py-3">Adscripcion</th>
+                            <th class="px-4 py-3">Sueldo mensual</th>
+                            <th class="px-4 py-3">Telefono</th>
+                            <th class="px-4 py-3">Correo</th>
+                            <th class="px-4 py-3 text-center">Vista/Editar/Eliminar</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white">

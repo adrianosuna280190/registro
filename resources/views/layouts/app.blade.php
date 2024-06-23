@@ -45,10 +45,10 @@
                         @auth
                             @if (auth()->user())
                                 <a href="{{ route('employee') }}"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Employee</a>
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Empleado</a>
 
                                 <a href="{{ route('employee_register') }}"
-                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Register Employee</a>
+                                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Registrar empleado</a>
                             @endif
                         @endauth
                     </div>
@@ -70,7 +70,7 @@
                                     hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" action="{{ route('logout') }}"
                                     method="post">
                                     @csrf
-                                    <button type="submit">Logout</button>
+                                    <button type="submit">Salir</button>
                                     </form>
                                 </li>
                             </ul>
